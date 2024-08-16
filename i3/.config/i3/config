@@ -13,7 +13,7 @@ set $mod Mod4
 
 exec_always --no-startup-id picom
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/catppuccin-wallpaper.png
-exec_always --no-startup-id feh --bg-scale ~/Pictures/pink-background.jpg
+exec_always --no-startup-id feh --bg-scale --no-fehbg ~/Pictures/wallpapers/purple_swirls.jpg
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
@@ -238,6 +238,8 @@ gaps outer 5px
 
 # for_window [class="^.*"] border pixel 0
 
+for_window [class="Nm-connection-editor" instance="nm-connection-editor"] floating enable
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
 
 # bindsym $mod+escape exec -no-startup-id i3exit suspend, mode "default"
 
