@@ -89,7 +89,7 @@ font-1 = MesloLGS Nerd Font Mono:size=20;4
 modules-left = xworkspaces 
 ; xwindow
 modules-center = date
-modules-right = lan wlan pulseaudio battery
+modules-right = lan wlan pulseaudio battery myicon
 # date tray  memory cpu 
 ; battery wlan
 cursor-click = pointer
@@ -294,9 +294,9 @@ label-foreground = ${colors.primary}
 
 [module/myicon]
 type = custom/text
-content = %{T2}%{T-}
+content = %{T2}󰤆%{T-}
 content-foreground = ${colors.primary} 
-click-left = ~/.config/polybar/scripts/audio_script.sh
+click-left = ~/.config/polybar/scripts/power_script.sh
 
 
 [settings]
