@@ -83,6 +83,7 @@ separator-foreground = ${colors.text}
 font-0 = MesloLGS Nerd Font Mono:size=10;2
 # ;2
 font-1 = MesloLGS Nerd Font Mono:size=20;4
+font-2 = MesloLGS Nerd Font Mono:size=17;3
 #;2
 # font-0 = <fontconfig pattern>;<vertical offset>
 
@@ -163,11 +164,8 @@ format-volume = %{A1:~/Documents/scripts/audio_script.sh:}<label-volume>%{A}
 
 use-ui-max = false
 label-volume = %{T2}%{T-}
-; " %percentage%%"
-
-label-muted = %{T2}%{T-}  
-; 0%
-label-muted-foreground = ${colors.peach}
+label-muted = %{T2}%{T-}
+label-muted-foreground = ${colors.disabled}
 
 ; [module/xkeyboard]
 ; type = internal/xkeyboard
@@ -215,7 +213,7 @@ format-discharging = %{A1:~/Documents/scripts/battery_script.sh:}<ramp-capacity>
  
 ; <label-discharging>
 ramp-capacity-foreground = ${colors.primary} 
-ramp-capacity-0-foreground = ${colors.peach}
+ramp-capacity-0-foreground = ${colors.alert}
 ramp-capacity-0 = %{T2}%{T-}
 ramp-capacity-1 = %{T2}%{T-}
 ramp-capacity-2 = %{T2}%{T-}
@@ -276,7 +274,7 @@ interval = 1.0
 
 format-disconnected = <label-disconnected>
 label-disconnected = %{T2}󰤮%{T-}
-label-disconnected-foreground = ${colors.peach} 
+label-disconnected-foreground = ${colors.disabled} 
 ; label-disconnected-background = #rrggbb
 ; label-disconnected-foreground = #rrggbb
 ; label-disconnected-padding = 1
@@ -294,9 +292,10 @@ label-foreground = ${colors.primary}
 
 [module/myicon]
 type = custom/text
-content = %{T2}󰤆%{T-}
+content = %{T3}󰤆%{T-}
 content-foreground = ${colors.primary} 
-click-left = ~/Documents/scripts/power_script.sh
+; click-left = ~/Documents/scripts/rofi-power-menu.sh
+click-left = rofi -show power-menu -modi power-menu:~/Documents/scripts/rofi-power-menu.sh
 
 
 [settings]

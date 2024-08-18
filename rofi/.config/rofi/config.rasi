@@ -1,6 +1,6 @@
 configuration{
     display-drun: "Applications:";
-    modi: "drun";
+    modi: "drun,window";
     icon-theme: "Papyrus";
     show-icons: true;
     terminal: "alacritty";

@@ -39,7 +39,7 @@ icons[cancel]="\Uf0156"
 
 declare -A actions
 #actions[lockscreen]="loginctl lock-session ${XDG_SESSION_ID-}"
-actions[lockscreen]="i3lock ; systemctl suspend"
+actions[lockscreen]="loginctl lock-session"
 #actions[switchuser]="???"
 actions[logout]="loginctl terminate-session ${XDG_SESSION_ID-}"
 actions[suspend]="systemctl suspend"
