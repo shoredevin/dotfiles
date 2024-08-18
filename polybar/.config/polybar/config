@@ -159,7 +159,7 @@ type = internal/pulseaudio
 ; format-value-prefix-font-size = 100
 format-volume-prefix-foreground = ${colors.primary}
 format-volume-foreground = ${colors.primary}
-format-volume = %{A1:~/.config/polybar/scripts/audio_script.sh:}<label-volume>%{A}
+format-volume = %{A1:~/Documents/scripts/audio_script.sh:}<label-volume>%{A}
 
 use-ui-max = false
 label-volume = %{T2}%{T-}
@@ -200,7 +200,7 @@ type = internal/battery
 battery = BAT0
 adapter = AC
 poll-interval = 5
-format-charging = %{A1:~/.config/polybar/scripts/battery_script.sh:}<animation-charging>%{A}
+format-charging = %{A1:~/Documents/scripts/battery_script.sh:}<animation-charging>%{A}
  
 ; <label-charging>
 animation-charging-foreground = ${colors.green}
@@ -211,7 +211,7 @@ animation-charging-2 = %{T2}%{T-}
 animation-charging-3 = %{T2}%{T-}
 animation-charging-4 = %{T2}%{T-}
 
-format-discharging = %{A1:~/.config/polybar/scripts/battery_script.sh:}<ramp-capacity>%{A}
+format-discharging = %{A1:~/Documents/scripts/battery_script.sh:}<ramp-capacity>%{A}
  
 ; <label-discharging>
 ramp-capacity-foreground = ${colors.primary} 
@@ -229,7 +229,7 @@ ramp-capacity-4 = %{T2}%{T-}
 ; animation-discharging-3 = %{T2}%{T-}
 ; animation-discharging-4 = %{T2}%{T-}
 full-at = 99
-format-full = %{A1:~/.config/polybar/scripts/battery_script.sh:}<label-full>%{A}
+format-full = %{A1:~/Documents/scripts/battery_script.sh:}<label-full>%{A}
 label-full = %{T2}%{T-}
 label-full-foreground = ${colors.green}
 ; low-at = 98
@@ -260,7 +260,7 @@ ramp-signal-foreground = ${colors.primary}
 ; inherit = network-base
 ; interface-type = wireless
 label-connected = %essid%
-format-connected = %{A1:~/.config/polybar/scripts/network_script.sh:}<ramp-signal>%{A} 
+format-connected = %{A1:~/Documents/scripts/network_script.sh:}<ramp-signal>%{A} 
 ; <label-connected>
 ; format-connected-prefix = %{T2}󰖩 {T-}
 ; [module/wlan]
@@ -296,7 +296,7 @@ label-foreground = ${colors.primary}
 type = custom/text
 content = %{T2}󰤆%{T-}
 content-foreground = ${colors.primary} 
-click-left = ~/.config/polybar/scripts/power_script.sh
+click-left = ~/Documents/scripts/power_script.sh
 
 
 [settings]
